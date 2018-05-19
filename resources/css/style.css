@@ -38,8 +38,21 @@
     background: #fff;
 }
 
-.navbar {
+.navbar, .navbar-brand {
     min-height: 4.25rem;
+}
+
+.navbar-burger {
+    height: 4.25rem;
+    width: 4.25rem;
+}
+
+.button.is-primary {
+    background-color: #e67e22;
+}
+
+.button.is-primary:hover, .button.is-primary:active {
+    background-color: #f78f33;
 }
 
 .navbar-item img {

@@ -38,7 +38,7 @@
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link" href="#">Membership</a>
                     <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item" href="#">Packages</a>
+                        <a class="navbar-item" href="membership/packages">Packages</a>
                         <a class="navbar-item" href="#">Register</a>
                     </div>
                 </div>
@@ -79,6 +79,21 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+                    var target = $el.dataset.target;
+                    var $target = document.getElementById(target);
+                    $el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>    
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.helper.ie8.js"></script><![endif-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
     <script>
