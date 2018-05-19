@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vigyaan Bharti Rajasthan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="resources/img/icon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container"> 
+            <div class="navbar-brand">
+                <a class="navbar-item" href="http://vibharajasthan.org/">
+                <img src="resources/img/vibha-logo.png" alt="Vigyaan Bharti Rajasthan" height="64">
+                </a>
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+            
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-start">
+                <a class="navbar-item" href="http://vibharajasthan.org/">Home</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="/about-us">About Us</a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item" href="#">Aims and Objectives</a>
+                            <a class="navbar-item" href="about-us">About Vibha</a>
+                        </div>
+                    </div>
+    
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">Membership</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="#">Packages</a>
+                        <a class="navbar-item" href="#">Register</a>
+                    </div>
+                </div>
+                </div>
+            
+                <div class="navbar-end">
+                <div class="navbar-item">
+                    <a href="#" class="button is-primary">Register for Membership</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="slider">
+        <div class="my-slider">
+            <div>
+                <img src="resources/img/slide-1.jpg" alt="">
+            </div>
+            <div>
+                <img src="resources/img/slide-5.jpg" alt="">    
+            </div>        
+        </div>
+        <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+            <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                <img src="resources/img/angle-left.png" alt="">
+            </li>
+            <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                <img src="resources/img/angle-right.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="title is-4">About Vigyaan Bharti</div>
+            <div class="content">
+                <p>India faces critical challenges as a nation in its march towards a welfare state. Considering the nature of the challenges which are so unique, only rapid strides in the sector of science and technology, in resonance with India’s heritage can meet those challenges.</p>
+                <a href="about-us" class="button is-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.helper.ie8.js"></script><![endif-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            controlsContainer: "#customize-controls",
+            slideBy: 'page',
+            arrowKeys: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            autoplay: true
+        });
+        
+        // NOTE: 
+        // prior to v2.0.2, options "container", "controlsContainer", "navContainer" and "autoplayButton" still need to be DOM elements.
+        // e.g. container: document.querySelector('.my-slider'),
+    </script>
+</body>
+</html>

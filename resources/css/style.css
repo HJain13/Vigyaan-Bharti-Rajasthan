@@ -1,0 +1,49 @@
+#slider {
+    position: relative;
+    width: 100%;
+}
+
+#slider img {
+    width: 100%;
+}
+
+.controls {
+    text-align: center;
+}
+.controls li {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.controls li img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.controls .prev {
+    left: 0;
+}
+.controls .next {
+    right: 0;
+}
+.controls li {
+    background: rgba(255, 255, 255, 0.8);
+}
+.controls li:hover {
+    background: #fff;
+}
+
+.navbar {
+    min-height: 4.25rem;
+}
+
+.navbar-item img {
+    max-height: 2.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
