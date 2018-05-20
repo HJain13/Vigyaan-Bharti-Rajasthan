@@ -60,3 +60,50 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+#iisf {
+    color: #cc2222;
+    font-weight: 700;
+}
+
+.is-blinking {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-foot img {
+    position: relative;
+    bottom: 0;
+}
+
+footer.notification:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.content ol li ol {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.box {
+    padding: 2rem 2.5rem;
+}
+
+.content a.is-primary {
+    color: #e67e22 !important;
+}
+
+.content a.is-primary:visited, .content a.is-primary:hover {
+    color: #f8a052 !important;
+} 
+
+@media (max-width:1024px) {
+    .hero-body.has-mobile-padding {
+        padding: 1rem 0;
+    }
+}
