@@ -15,9 +15,9 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    height: 60px;
-    line-height: 60px;
-    padding: 0 15px;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 0.75rem;
     cursor: pointer;
     transition: background 0.3s;
 }
