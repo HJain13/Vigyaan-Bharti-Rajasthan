@@ -15,39 +15,37 @@
         <div class="container"> 
             <div class="navbar-brand">
                 <a class="navbar-item" href="http://vibharajasthan.org/">
-                <img src="../resources/img/vibha-logo.png" alt="Vigyaan Bharti Rajasthan" height="64">
+                    <img src="resources/img/vibha-logo.png" alt="Vigyaan Bharti Rajasthan" height="64">
                 </a>
                 <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            </div>
-            
+            </div>            
             <div id="navbarExampleTransparentExample" class="navbar-menu">
                 <div class="navbar-start">
-                <a class="navbar-item" href="http://vibharajasthan.org/">Home</a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link" href="http://vibharajasthan.org/about-us/">About Us</a>
+                    <a class="navbar-item" href="http://vibharajasthan.org/">Home</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link" href="http://vibharajasthan.org/about-us/">About Us</a>
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item" href="#">Aims and Objectives</a>
+                                <a class="navbar-item" href="http://vibharajasthan.org/about-us/">About Vibha</a>
+                            </div>
+                        </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="#">Membership</a>
                         <div class="navbar-dropdown is-boxed">
-                            <a class="navbar-item" href="#">Aims and Objectives</a>
-                            <a class="navbar-item" href="#">About Vibha</a>
+                            <a class="navbar-item" href="http://vibharajasthan.org/membership/packages/">Packages</a>
+                            <a class="navbar-item" href="#">Register</a>
                         </div>
                     </div>
-    
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" href="#">Membership</a>
-                    <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item" href="http://vibharajasthan.org/membership/packages/">Packages</a>
-                        <a class="navbar-item" href="#">Register</a>
-                    </div>
+                    <a class="navbar-item is-blinking" id="iisf" href="http://vibharajasthan.org/iisf/">IISF 2018</a>
                 </div>
-                </div>
-            
                 <div class="navbar-end">
-                <div class="navbar-item">
-                    <a href="#" class="button is-primary">Register for Membership</a>
-                </div>
+                    <div class="navbar-item">
+                        <a href="#" class="button is-primary">Register for Membership</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,6 +65,14 @@
             </div>
         </div>
     </div>
+    <footer class="notification is-black">
+        <div class="container">
+            <div class="has-text-centered">
+                <p>2018 © <strong>Vigyaan Bharti</strong> Rajasthan. All Rights Reserved</p>
+                <p>Developed and Designed by <a href="https://hjain13.github.io/" target="_blank">Himesh Jain</a></p>
+            </div>
+        </div>
+    </footer>      
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

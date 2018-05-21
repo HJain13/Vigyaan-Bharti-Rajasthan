@@ -94,11 +94,11 @@ footer.notification:not(:last-child) {
     padding: 2rem 2.5rem;
 }
 
-.content a.is-primary {
+.content a.is-primary:not(.button) {
     color: #e67e22 !important;
 }
 
-.content a.is-primary:visited, .content a.is-primary:hover {
+.content a.is-primary:visited:not(.button), .content a.is-primary:hover:not(.button) {
     color: #f8a052 !important;
 } 
 
