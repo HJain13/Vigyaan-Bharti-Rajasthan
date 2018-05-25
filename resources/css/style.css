@@ -102,6 +102,11 @@ footer.notification:not(:last-child) {
     color: #f8a052 !important;
 } 
 
+hr {
+    background-color: #ddd;
+}
+
+
 @media (max-width:1024px) {
     .hero-body.has-mobile-padding {
         padding: 1rem 0;
