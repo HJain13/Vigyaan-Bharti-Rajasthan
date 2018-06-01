@@ -66,6 +66,11 @@
     font-weight: 700;
 }
 
+#wed2018 {
+    color: darkgreen;
+    font-weight: 700;    
+}
+
 .is-blinking {
     animation: blinker 1.5s linear infinite;
 }
