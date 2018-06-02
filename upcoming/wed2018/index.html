@@ -54,8 +54,8 @@
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
-                    <div class="column">
-                        <div class="content">
+                    <div class="column is-padded-3x has-side-divider">
+                        <div class="content has-text-justified">
                                 <p>आदरणीय कार्यकारी सदस्य गण,</p>
                                 <p>नमस्कार,</p>
                                 <p>आपको यह जानकार हर्ष होगा की विश्व पर्यावरण दिवस ( मंगलवार ,5 जून) के अवसर पर विज्ञान भारती राजस्थान इकाई द्वारा राजस्थान कृषि अनुसंधान केंद्र , दुर्गापुरा व् SKN कृषि विश्वविध्यालय जोबनेर के सहयोग से सेमीनार रखा गया है. सेमीनार का विषय "समाज में जलवायु परिवर्तन का प्रभाव "(Impact of climate change on society ) रहेगा.</p>
@@ -64,8 +64,8 @@
                                 <p>दिनांक -5 जून 2018, मंगलवार<br />समय : - 10.30 AM से 12.30 PM<br />स्थान :- STR, कांफ्रेंस हॉल , राजस्थान कृषि अनुसंधान केंद्र , दुर्गापुरा,जयपुर<br />संयोजक : प्रो. एन.के . गुप्ता(9460987039) &amp; डॉ शंकर बाबू (9810849723)</p>                          
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="box has-text-centered">
+                    <div class="column is-padded-3x">
+                        <div class="has-text-centered">
                             <div class="modal">
                                 <div class="modal-background"></div>
                                 <div class="modal-content">
@@ -73,9 +73,21 @@
                                         <img src="../../resources/img/wed.2018.jpg" alt="Invitation for World Environment Day 2018">
                                     </p>
                                 </div>
-                                <button class="modal-close" aria-label="close"></button>
                             </div>
-                            <img src="../../resources/img/wed.2018.jpg" alt="Invitation for World Environment Day 2018">
+                           <a id="open-modal"><img src="../../resources/img/wed.2018.jpg" alt="Invitation for World Environment Day 2018"></a>
+                           <script>
+                                document.querySelector('a#open-modal').addEventListener('click', function(event) {
+                                    event.preventDefault(); var modal = document.querySelector('.modal');
+                                    html = document.querySelector('html');
+                                    modal.classList.add('is-active');
+                                    html.classList.add('is-clipped');
+                                    modal.querySelector('.modal-background').addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        modal.classList.remove('is-active');
+                                        html.classList.remove('is-clipped'); 
+                                    });
+                                });
+                           </script>
                         </div>            
                     </div>
                 </div>

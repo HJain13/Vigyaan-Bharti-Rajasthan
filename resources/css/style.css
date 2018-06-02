@@ -111,6 +111,18 @@ hr {
     background-color: #ddd;
 }
 
+.column.has-side-divider {
+    border-right: 1px solid rgba(10, 10, 10, 0.1)
+}
+
+@media (min-width:1024px) {
+    .column.is-padded-2x {
+        padding: 2rem;
+    }
+    .column.is-padded-3x {
+        padding: 3rem;
+    }
+}
 
 @media (max-width:1024px) {
     .hero-body.has-mobile-padding {
