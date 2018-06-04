@@ -74,10 +74,20 @@
                                     </p>
                                 </div>
                             </div>
-                           <a id="open-modal"><img src="../../resources/img/wed.2018.jpg" alt="Invitation for World Environment Day 2018"></a>
+                            <div class="modal">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                    <p class="image">
+                                        <img src="../../resources/img/wed.2018-2.jpg" alt="Invitation for World Environment Day 2018">
+                                    </p>
+                                </div>
+                            </div>
+                           <a id="open-modal-1"><img src="../../resources/img/wed.2018.jpg" alt="Invitation for World Environment Day 2018"></a>
+                           <hr>
+                           <a id="open-modal-2"><img src="../../resources/img/wed.2018-2.jpg" alt="Invitation for World Environment Day 2018"></a>                           
                            <script>
-                                document.querySelector('a#open-modal').addEventListener('click', function(event) {
-                                    event.preventDefault(); var modal = document.querySelector('.modal');
+                                document.querySelector('a#open-modal-1').addEventListener('click', function(event) {
+                                    event.preventDefault(); var modal = document.querySelectorAll('.modal')[0];
                                     html = document.querySelector('html');
                                     modal.classList.add('is-active');
                                     html.classList.add('is-clipped');
@@ -87,6 +97,17 @@
                                         html.classList.remove('is-clipped'); 
                                     });
                                 });
+                                document.querySelector('a#open-modal-2').addEventListener('click', function(event) {
+                                    event.preventDefault(); var modal = document.querySelectorAll('.modal')[1];
+                                    html = document.querySelector('html');
+                                    modal.classList.add('is-active');
+                                    html.classList.add('is-clipped');
+                                    modal.querySelector('.modal-background').addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        modal.classList.remove('is-active');
+                                        html.classList.remove('is-clipped'); 
+                                    });
+                                });                                
                            </script>
                         </div>            
                     </div>
